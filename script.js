@@ -5,7 +5,9 @@ function fixPhpNetTitles() {
         let functionName = (/function\.(.+)\.php/).exec(node.href);
         if (functionName) {
             functionName = functionName[1].replace(/-/g, '_');
-            node.insertAdjacentHTML('afterbegin', `<span>${functionName}() | </span>`);
+
+            titleNode = node.querySelector('h3') || node; // some browsers wrap <a> around the <h3> (instead of the reverse)
+            titleNode.insertAdjacentHTML('afterbegin', `<span>${functionName}() | </span>`);
         }
     });
 }
