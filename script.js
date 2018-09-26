@@ -1,5 +1,5 @@
 function fixPhpNetTitles() {
-    const phpNetAnchors = document.querySelectorAll('a[href*="php.net/manual/"]');
+    const phpNetAnchors = document.querySelectorAll('[href*="php.net/manual/"]');
 
     phpNetAnchors.forEach((node) => {
         let functionName = (/function\.(.+)\.php/).exec(node.href);
