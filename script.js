@@ -5,7 +5,7 @@ function fixPhpNetTitles() {
         let functionName = (/function\.(.+)\.php/).exec(node.href);
         if (functionName) {
             functionName = functionName[1].replace(/-/g, '_');
-            node.textContent = `${functionName}() | ${node.textContent}`;
+            node.insertAdjacentHTML('afterbegin', `<span>${functionName}() | </span>`);
         }
     });
 }
