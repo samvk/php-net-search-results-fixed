@@ -1,7 +1,7 @@
 {
   "name": "PHP.net Search Results - Fixed",
   "manifest_version": 2,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Include the name of the PHP function in google search results",
   "author": "Sam Kauffman (SamVK)",
   "icons": {
@@ -9,7 +9,7 @@
       "48": "img/icon/icon-48.png",
       "128": "img/icon/icon-128.png"
   },
-  "permissions": [ "storage" ],
+  "permissions": [],
   "content_scripts": [{
       "matches": ["https://www.google.com/search*"],
       "js": ["script.js"]
