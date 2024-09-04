@@ -1,7 +1,7 @@
 {
   "name": "PHP.net Search Results - Fixed",
-  "manifest_version": 2,
-  "version": "1.0.2",
+  "manifest_version": 3,
+  "version": "1.0.3",
   "description": "Include the name of the PHP function in google search results",
   "author": "Sam Kauffman (SamVK)",
   "icons": {
